@@ -1,0 +1,304 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .sale-nav {
+    background-color: #1D232C;
+    color: #E2E1E1;
+    padding: 5px;
+    text-align: center;
+    font-size: 1.5vw;
+  }
+
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* Main Nav bar styling */
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #1D232C;
+  }
+  .navbar_links {
+    display: flex;
+    color: #1D232C;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+  }
+
+  .navbar_links a {
+    text-decoration: none;
+    color: #1D232C;
+  }
+  .navbar_links a:hover {
+    text-decoration: underline;
+  }
+
+.hamburger-menu {
+    height: 40px;
+    width: 40px;
+    display: none;
+
+}
+
+
+@media screen and (max-width:1024px){
+    .hamburger-menu {
+        display: block;
+    }
+    .navbar_links {
+        display: none;
+    }
+}
+/*Side Navbar*/
+
+.side-navbar {
+    background-color: #1D232C;
+    width: 300px;
+    height: 100vh;
+    padding: 20px;
+    display: none;
+
+}
+
+.side-navbar__contents {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+    
+}
+.side-navbar__contents a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+
+/* Slider Image*/
+
+.slider{
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    position: relative;
+    
+    border-radius: 5px;
+
+}
+
+.slider-image-container{
+    display: flex;
+    transition: 2s;
+}
+
+.slider-image{
+    width: 100vw;
+}
+
+.slider-left-button{
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    z-index: 1;
+}
+
+.slider-left-button i{
+    font-size: 10vw;
+    
+}
+.slider-right-button{
+    position: absolute;
+    top: 35%;
+    right: 5%;
+}
+.slider-right-button i{
+    font-size: 10vw;
+}
+.slider-content{
+    position: absolute;
+    color: white;
+    text-align: center;
+     width: 100%;
+     top: 20%;
+}
+.slider-content h1{
+    font-size: 5vw;
+}
+.slider-content button{
+   padding-left: 20px;
+   padding-right: 20px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   margin-top: 10px;
+   color: #1D232C;
+}
+
+/*Brands*/
+
+.brands_title {
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.brands_logos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.brands img {
+    height: 75px;
+    width: 75px;
+
+}
+.brand_name {
+    text-align: center;
+    font-size: 20px;
+}
+
+
+@media screen and (max-width:1024px){
+
+    .brands_title {
+        margin-top: 50px;
+        font-weight: bold;
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .brands_logos {
+        display: flex;
+        justify-content: space-between;
+    }
+    .brands img {
+        height: 30px;
+        width: 30px;
+    
+    }
+    .brand_name {
+        text-align: center;
+        font-size: 10px;
+    }
+    
+}
+/*Customer Experince Section*/
+
+.CES {
+    margin-top: 5vw;
+    margin-bottom: 2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5vw;
+}
+
+.CES1 {
+    width: 400px;
+    font-weight: bold;
+}
+
+.emoji {
+    font-size: 3vw;
+    margin-bottom: 10px;
+}
+
+.emojis {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 10px;
+    font-size: 1vw;
+}
+.emojis1 { 
+    margin: 20px;
+}
+
+/*New Arrivals*/
+
+.new_arrivals_container {
+    margin-top: 2vw;
+}
+
+.new_arrivals {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2vw;
+}
+
+.new_arrival_one {
+    position: relative;
+    width: 20vw;
+    height: 20vw;
+    overflow: hidden;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20vw;
+    height: 20vw;
+    background-color: black;
+    opacity: 0.6;
+    border-radius: 1vw;
+}
+
+
+.new_arrival_one img {
+    height: 20vw;
+    width: 20vw;
+    border-radius: 1vw;
+}
+
+.shopnow_button {
+    position: absolute;
+    top: 55%;
+    left: 25%;
+    padding: 1vw;
+    width: 10vw;
+    border-radius: 1vw;
+    border: none;
+}
+
+@media screen and (max-width:1024px){
+
+   .shopnow_button {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 10px;
+    font-size: 1.2vw;
+    color: #1D232C;
+    border-radius: 10px;
+    position: absolute;
+    border: none;
+    top: 50%;
+    left: 18%;
+    z-index: 2;
+    width: 60px;
+
+   }
+
+   
+    
+}
