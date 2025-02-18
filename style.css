@@ -70,12 +70,14 @@ body {
 }
 /*Side Navbar*/
 
-
-
+.side-navbar {
+    display: none;
+}
 
 @media screen and (max-width:1024px){
 
     .side-navbar {
+        display: block;
         background-color: #1D232C;
         width: 50%;
         height: 100vh;
