@@ -8,6 +8,25 @@ closingX.addEventListener("click", function () {
     topsale.style.display = "none"
 })
 
+//side nav bar 
+var hamburgermenu = document.getElementById("ham-menu")
+var sidenavbar = document.getElementById("sid-nav")
+var closenav = document.getElementById("side-navbar__close")
+
+hamburgermenu.addEventListener ("click", function ()
+{
+    sidenavbar.style.left = 0
+
+})
+
+
+closenav.addEventListener ("click", function()
+{
+    sidenavbar.style.left = "-60%"
+})
+
+
+
 //Slider Image Section 
 
 var sliderleftbutton = document.getElementById("slider-left-activate")

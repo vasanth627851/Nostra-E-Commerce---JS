@@ -70,27 +70,44 @@ body {
 }
 /*Side Navbar*/
 
-.side-navbar {
-    background-color: #1D232C;
-    width: 300px;
-    height: 100vh;
-    padding: 20px;
-    display: none;
 
+
+
+@media screen and (max-width:1024px){
+
+    .side-navbar {
+        background-color: #1D232C;
+        width: 50%;
+        height: 100vh;
+        position: fixed; 
+        top: 0;
+        left: -60%;  
+        padding: 20px;
+        z-index: 3;
+        transition: left 0.5s ease; 
+    }
+    .side-navbar.active {
+        left: 0;  
+    }
+    
+    .side-navbar__contents {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        
+        
+    }
+    .side-navbar__contents a {
+        color: white;
+        text-decoration: none;
+        
+    }
+    
+    
 }
 
-.side-navbar__contents {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    
-    
-}
-.side-navbar__contents a {
-    color: white;
-    text-decoration: none;
-    
-}
+
+
 
 
 /* Slider Image*/
